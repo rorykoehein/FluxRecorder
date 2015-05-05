@@ -1,5 +1,5 @@
 # FluxRecorder: Live Action Replay
-Record and replay actions for [Facebook's Flux Dispatcher](https://github.com/facebook/flux)
+A proof of concept to record and replay actions for [Facebook's Flux Dispatcher](https://github.com/facebook/flux)
 
 Inspired by Jeremy Morrel's JSConf UY presentation: [Those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1).
 
@@ -23,6 +23,6 @@ recorder.listenToHotKeys(); // listens to ALT-SHIFT-C for copy and ALT-SHIFT-P f
 3. Make sure the starting point for both recording and replay is an 'empty' state
 3. When using React Router, use it the flux way (with actions and a RouterStore): https://github.com/rackt/react-router/blob/master/docs/guides/flux.md#accessing-route-and-params-from-action-creators
 
-### npm
-
-Will release a future version if there is enough interest.
+## npm
+This is a proof of concept. Will release a future version if there is enough interest. Contributions and feedback very
+welcome in GitHub issues.
