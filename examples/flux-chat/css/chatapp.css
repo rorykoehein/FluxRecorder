@@ -10,7 +10,7 @@
  * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-.chatapp {
+.chatapp, .help {
   font-family: 'Muli', 'Helvetica Neue', helvetica, arial;
   max-width: 760px;
   margin: 20px auto;
