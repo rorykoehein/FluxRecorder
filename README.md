@@ -1,7 +1,7 @@
 # FluxRecorder: Live Action Replay
 A proof of concept to record and replay actions for [Facebook's Flux Dispatcher](https://github.com/facebook/flux)
 
-Inspired by Jeremy Morrel's JSConf UY presentation: [Those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1).
+Inspired by Jeremy Morrell's JSConf UY presentation: [Those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1).
 
 ## Usage
 Require FluxRecorder in your app as such:
