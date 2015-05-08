@@ -50,16 +50,21 @@ class FluxRecorder {
         this._dispatcher.unregister(this._dispatchId);
     }
 
+    /**
+     * Listen to hotkeys to easily copy the current recording or play it from the browser.
+     */
     listenToHotKeys(){
-        // listen to ALT + SHIFT + C and to copy recording to clipboard
+        if(typeof window === 'undefined'){
+            return;
+        }
+
         window.addEventListener("keydown", function(e) {
+            // listen to ALT + SHIFT + C and to copy recording to clipboard
             if(e.altKey && e.shiftKey && e.keyCode === 67){
                 window.prompt("Copy these actions to clipboard: ", JSON.stringify(this._actions));
             }
-        }.bind(this));
 
-        // listen to ALT + SHIFT + P and to copy recording to clipboard
-        window.addEventListener("keydown", function(e) {
+            // listen to ALT + SHIFT + P and to copy recording to clipboard
             if(e.altKey && e.shiftKey && e.keyCode === 80){
                 var actions = window.prompt("Paste actions JSON here:", "");
                 this.playback(JSON.parse(actions), 500);
