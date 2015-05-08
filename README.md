@@ -3,15 +3,14 @@ A proof of concept to record and replay actions for [Facebook's Flux Dispatcher]
 
 Inspired by Jeremy Morrell's JSConf UY presentation: [Those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1).
 
-## Usage
-Require FluxRecorder in your app as such:
+## Usage:
 
 ``` javascript
 var AppDispatcher = require('./dispatcher'); // reference to you Flux Dispatcher instance
 var FluxRecorder = require('./flux-recorder'); // the flux-recorder.js from this project
-var recorder = new FluxRecorder(AppDispatcher); // create a new recorder
-recorder.startRecording(); // start recording
-recorder.listenToHotKeys(); // listens to ALT-SHIFT-C for copy and ALT-SHIFT-P for playback
+var recorder = new FluxRecorder(AppDispatcher); // create a new recorder instance
+recorder.startRecording(); // listen to and save actions
+recorder.listenToHotKeys(); // enable prompts: ALT-SHIFT-C to copy and ALT-SHIFT-P to replay
 ```
 
 <a href="http://nextminds.github.io/flux-recorder/flux-chat/">Live demo of the Flux Chat App with recording here.</a> (Always start with a fresh state (so refresh) before replaying actions!)
