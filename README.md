@@ -3,6 +3,8 @@ A proof of concept to record and replay actions for [Facebook's Flux Dispatcher]
 
 Inspired by Jeremy Morrell's JSConf UY presentation: [Those who forget the past](https://speakerdeck.com/jmorrell/jsconf-uy-flux-those-who-forget-the-past-dot-dot-dot-1).
 
+Background and explanation here: [Replaying bugs with Flux](https://medium.com/@nextminds/replaying-bugs-with-flux-52f6bd8c8307)
+
 ## Usage:
 
 ``` javascript
