@@ -22,7 +22,8 @@ recorder.listenToHotKeys(); // enable prompts: ALT-SHIFT-C to copy and ALT-SHIFT
 1. Turn off your API-communication before replay (all incoming data should be in the actions already)
 2. Make sure all application-state changes go through actions and the dispatcher
 3. Make sure the starting point for both recording and replay is an 'empty' state
-3. When using React Router, use it the flux way (with actions and a RouterStore): https://github.com/rackt/react-router/blob/master/docs/guides/flux.md#accessing-route-and-params-from-action-creators
+4. When using React Router, use it the flux way (with actions and a RouterStore): https://github.com/rackt/react-router/blob/master/docs/guides/flux.md#accessing-route-and-params-from-action-creators
+5. Obfuscate any sensitive data when using this with real users
 
 ## npm
 This is a proof of concept. Will release a future version if there is enough interest. Contributions and feedback very
